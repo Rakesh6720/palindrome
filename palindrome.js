@@ -5,9 +5,11 @@ let userString = prompt("Please enter a single word:");
 let backwardString = reverseString(userString);
 // Step 3: compare the user's string with it's palindrome.  
 if (backwardString === userString) {
+		document.getElementById("here").innerHTML = backwardString + " and " + userString + " are palindromes!"
 		console.log(backwardString + " and " + userString + " are palindromes!");
 	}
 	else {
+		document.getElementById("here").innerHTML = backwardString + " and " + userString + " are NOT palindromes!"
 		console.log(backwardString + " and " + userString + " are not palindromes!");
 	}
 
